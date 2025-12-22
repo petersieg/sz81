@@ -1,0 +1,3 @@
+#/bin/sh
+dylibbundler -od -b -x ./$1/$1.app/Contents/MacOS/$1 -d ./$1/$1.app/Contents/libs/
+
