@@ -1,2 +1,21 @@
 Tools to make a DMG with program.app and all libs ready to be installed in MacOS Applications
 
+Compile and place in path dylibbundler in macdylibbundler.
+
+Compile your program (which you want to make a app from).
+
+Create a folder program. See sz81 folder as example.
+
+Inside this folder create a folder program.app.
+
+Inside program.app create a folder Contents. Inside place your info.plist file.
+
+Inside Contents create a folder MacOS. Inside place your program und the run script.
+
+Inside Contents create a second folder Resources. Inside place the generated icon icns file.
+
+Run makeapplibs scripts with program name. Script must be inside same folder.
+dylibbundler now idestifies required libs for your program, creates a libs folder inside Contents and alters yout program to use this copied libs.
+
+Create a icon.png file and place it inside png-to-icns folder. Start png-to-icns.sh. Copy created icns file into Ressources folder.
+
