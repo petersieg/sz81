@@ -19,3 +19,4 @@ dylibbundler now idestifies required libs for your program, creates a libs folde
 
 Create a icon.png file and place it inside png-to-icns folder. Start png-to-icns.sh. Copy created icns file into Ressources folder.
 
+Any addtional files needed by your program must be placed in MacOS folder.
