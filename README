@@ -13,6 +13,8 @@ sdl_main.c:
 and check Makefile.OSX
 
 I bundled sz81 plus support files and libs into sz81.dmg, ready to be copied to Applications.
+sz81-HS.dmg compiled under High Sierra.
+sz81-Lion.dmg compiled under Lion.
 
 -*-*-*-*-
 
