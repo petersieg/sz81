@@ -1,0 +1,21 @@
+   4 REM COLLATZ
+   6 LET HN=0
+   9 LET HI=0
+  10 CLS
+  12 PRINT AT 1,1;"collatz"
+  14 PRINT AT 2,1;"-------"
+  20 LET N=INT (RND*99999999+1)
+  22 LET M=N
+  30 LET I=0
+  32 PRINT AT 6,1;"curr: ";M;" ";I;" ";N,"     "
+  90 LET I=I+1
+ 100 REM
+ 140 LET O=INT (INT (N/2)-N/2)
+ 150 LET C=(N/2 AND NOT O)+((3*N+1) AND O)
+ 160 LET N=C
+ 170 IF N>1 THEN GOTO 32
+ 180 IF I<HI THEN GOTO 12
+ 190 LET HI=I
+ 192 LET HN=M
+ 194 PRINT AT 4,1;"high: ";HN;" ";HI;"     "
+ 196 GOTO 20
